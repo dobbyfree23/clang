@@ -21,14 +21,62 @@
  *****
 *******
 
-4번         
-   *        
-  ***       
- *****      
-*******     
- *****      
-  ***       
-   *       
+4번            i
+   *           0
+  ***          1
+ *****         2 
+*******        3
+ *****         4
+  ***          5
+   *           6
     
+               i        j
+   *           0        
+  ***          1        
+ *****         2        
+*******        3        
+ ******        4        j > 9 - i      
+  *****        5        j > 9 - i
+   ****        6        j > 9 - i
      
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+
+   for(int i = 0; i < 7; i++) {
+
+      for(int j = 0; j < 7; j++) {
+
+         if(i < 4) {
+
+            if(j < 3 - i) {
+               printf(" ");
+            } else if(j > 3 + i) {
+               printf(" ");
+            } else {
+               printf("*");
+            }
+           
+         } else {
+
+            if(j < i - 3) {
+               printf(" ");
+            } else if (j > 9 - i) {
+               printf(" ");
+            } else {
+               printf("*");
+            }
+
+         }
+
+      }
+
+      printf("\n");
+
+   }
+
+   return 0;
+}

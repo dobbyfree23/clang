@@ -1,6 +1,8 @@
 /*
 구구단
 
+k = 0
+dan = 2 +  j + (k *3)
 2 X 1 = 2	3 X 1 = 3	4 X 1 = 4	
 2 X 2 = 4	3 X 2 = 6	4 X 2 = 8	
 2 X 3 = 6	3 X 3 = 9	4 X 3 = 12	
@@ -11,6 +13,9 @@
 2 X 8 = 16	3 X 8 = 24	4 X 8 = 32	
 2 X 9 = 18	3 X 9 = 27	4 X 9 = 36	
 
+
+k = 1
+dan = 2 +  j + (k * 3)
 5 X 1 = 5	6 X 1 = 6	7 X 1 = 7	
 5 X 2 = 10	6 X 2 = 12	7 X 2 = 14	
 5 X 3 = 15	6 X 3 = 18	7 X 3 = 21	
@@ -21,6 +26,8 @@
 5 X 8 = 40	6 X 8 = 48	7 X 8 = 56	
 5 X 9 = 45	6 X 9 = 54	7 X 9 = 63	
 
+k = 2
+dan = 2 +  j + (k *3)
 8 X 1 = 8	9 X 1 = 9	
 8 X 2 = 16	9 X 2 = 18	
 8 X 3 = 24	9 X 3 = 27	
@@ -32,3 +39,32 @@
 8 X 9 = 72	9 X 9 = 81	
 
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+
+    for(int k = 0; k < 3; k++) {
+
+        for(int i = 1; i <= 9; i++) {
+            
+            for(int j = 0; j < 3; j++) {
+
+                int dan = 2 + j + (k * 3);
+                int multiply = i;
+
+                if(dan < 10) {
+                    printf("%d X %d = %d\t", dan, multiply, dan * multiply);
+                }
+
+            }
+
+            printf("\n");
+        }
+
+        printf("\n");
+    }
+    
+    return 0;
+}
