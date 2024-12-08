@@ -12,8 +12,8 @@
 
 int main(void)
 {
-    char good[] = "GOOD!";  // {'G', 'O', 'O', 'D', '!', '\0'}
-    char *bad = "Bad!";     //  'B', 'a', 'D', '!', '\0'
+    char good[] = "GOOD!";  // char good[] = {'G', 'O', 'O', 'D', '!', '\0'}
+    char *bad = "Bad!";     // char *bad = (&)"Bad!"
 
     printf("1) bad주소값: %p\n", bad);
 
