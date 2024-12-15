@@ -17,13 +17,45 @@ int main(void)
     char* str = (char*)malloc(buffer_size);
 
     if(str == NULL) {
+
         printf("Memory allocation failed\n");
         return 1;
+        
     }
 
     printf("Enter a string: "); //  사용자에게 문자열 입력 요청
 
     while((c = getchar()) != '\n' && c != EOF) {
+        /*
+        Enter a string: abcdef
+
+        len = 0;
+        buffer_size = 1
+        c = 'a';
+        str[0] = 'a'
+        len = 1
+        buffer_size = 2
+        c = 'b'
+        str[1] = 'b'
+        len = 2
+        buffer_size = 4
+
+        c = 'c'
+        str[2] = 'c'
+        len = 3
+
+        c = 'd'
+        str[3] = 'd'
+        len = 4
+        buffer_size = 8
+        
+
+
+
+        
+        
+        */
+
 
         str[len++] = c; // 문자열에 문자 추가
 
