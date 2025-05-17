@@ -12,14 +12,13 @@
 
 int main(void)
 {
-    int a = 3;
-    int b = 5;
+    int a = 3;  // 0 0011 -> ~(0 0011) -> (1 1100)
+    int b = 5;  // 0 0101
 
     printf("3 & 5 = %d\n", a & b);  // 3 & 5 = 1
     printf("3 | 5 = %d\n", a | b);  // 3 | 5 = 7
     printf("3 ^ 5 = %d\n", a ^ b);  // 3 ^ 5 = 6
     printf("~3 = %d\n", ~a);        // ~3 = -4
-
 
     return 0;
 }
