@@ -14,14 +14,14 @@ int main(void)
         i = 0, 1
         조건 i < 7  i가 7일때는 실행 안함
             j = 0, 1, 2, 3, 4, 5, 6, 7
-            조건 j < 7  j가 7일때는 실행 안함
-            i          j 0123456 7(for문 종료)
-            0  printf -> *******
-            1  printf -> *******
-            2  printf -> *******
-            3  printf -> *******
-            4  printf -> *******
-            5  printf -> *******
+            조건 j < i+1
+            i          j 0123456 
+            0  printf -> *
+            1  printf -> **
+            2  printf -> ***
+            3  printf -> ****
+            4  printf -> *****
+            5  printf -> ******
             6  printf -> *******
             7  for문 종료
 
