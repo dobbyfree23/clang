@@ -102,7 +102,7 @@ int main(void)
     }
 
 
-
+    // 2번
     for (int i = 0; i < 13; i++) {
 
         if (i < 7) {
