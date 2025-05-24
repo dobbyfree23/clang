@@ -30,5 +30,21 @@
 42 48
 49
 
-
 */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int arr[7][7];
+
+    for(int i = 0; i < 7; i++) {
+
+        for(int j = 0; j < 7; j++) {
+            arr[i][j] = 1 + j + (i * 7);
+            printf("%d  ", arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
