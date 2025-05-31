@@ -23,6 +23,12 @@ int main(void)
     double num1 = 10.0, num2 = 5.0;
 
     for(int i = 0; i < 4; i++) {
+        /*
+        10.0 + 5.0 = 결과: 15.00
+        10.0 - 5.0 = 결과: 5.00
+        10.0 * 5.0 = 결과: 50.00
+        10.0 / 5.0 = 결과: 2.00
+        */
         printf("%.1f %c %.1f = ", num1, operators[i], num2);
         caculator(operations[i], num1, num2);
     }
