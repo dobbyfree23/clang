@@ -30,7 +30,14 @@ int main(void)
     girl[1].age = 13;
     girl[2].age = 7;
 
-    
+
+    for(int i=0; i < 3; i++) {
+
+        printf("소년의 이름은 %s 나이는 %d세\n", boy[i].name, boy[i].age);
+        printf("소녀의 이름은 %s 나이는 %d세\n", girl[i].name, girl[i].age);
+
+    }
+   
 
     return 0;
 }
